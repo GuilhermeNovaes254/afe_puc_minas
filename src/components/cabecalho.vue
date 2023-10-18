@@ -2,7 +2,7 @@
 <template>
   <BarraLinks/>
   <div class="hello">
-    <img alt="Logo Linkedin" src="../assets/linkedin.png" id="linkedin">
+    <img alt="Logo Linkedin" src="../assets/avatar.png" id="avatar">
     <div id="informacoes">
         <h3>Guilherme Novaes</h3>
         <div>IT Analyst | Santander Brasil | F1RST | Pós-graduando em Arquitetura de Soluções | Pós-graduação em Inteligência Artificial| Datalover| Python</div>
@@ -28,18 +28,18 @@ export default {
       background-color: rgb(3, 8, 132);
       margin: 0;
       display: flex;
-      flex-direction: row;
-      
+      flex-direction: row;      
+      align-content: center;
+      justify-content: center;
   }
   #informacoes{
       color:white;
   }
-  #linkedin{
+  #avatar{
       width: 100px;
       height:100px;
       aspect-ratio: 1;
       
   }
-
   h3{margin:0}
 </style>
