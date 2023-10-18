@@ -40,5 +40,6 @@ export default {
       aspect-ratio: 1;
       
   }
+
   h3{margin:0}
 </style>
