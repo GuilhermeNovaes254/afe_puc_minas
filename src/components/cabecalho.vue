@@ -24,21 +24,21 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.hello{
-    background-color: rgb(3, 8, 132);
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    
-}
-#informacoes{
-    color:white;
-}
-#linkedin{
-    width: 100px;
-    height:100px;
-    aspect-ratio: 1;
-    
-}
-h3{margin:0}
+  .hello{
+      background-color: rgb(3, 8, 132);
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      
+  }
+  #informacoes{
+      color:white;
+  }
+  #linkedin{
+      width: 100px;
+      height:100px;
+      aspect-ratio: 1;
+      
+  }
+  h3{margin:0}
 </style>

@@ -8,23 +8,21 @@
 </template>
 
 <script>
-
-
-export default {
-  name: 'BarraItens'
-}
+  export default {
+    name: 'BarraItens'
+  }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.links {
-    background-color: rgb(3, 8, 132);
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-around;
-}
-a{
-    color:white;
-}
+  .links {
+      background-color: rgb(3, 8, 132);
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      justify-content: space-around;
+  }
+  a{
+      color:white;
+  }
 </style>

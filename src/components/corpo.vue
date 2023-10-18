@@ -7,14 +7,10 @@
         </div>
         <div class="conteudo">
             <h2>Pós graduação</h2>
-            <!-- <ul>
-                <div v-for="pos in posG" :key="pos">
-                    {{pos}}
-                </div>
-            </ul> -->
             <ul>
-                <li>Arquitetura de Soluções (em andamento)</li>
-                <li>Inteligência Artificial</li>
+                <li v-for="(pos, index) in posG" :key="index">
+                    {{pos.value}}
+                </li>
             </ul>
         </div>
         <div class="conteudo">
@@ -24,18 +20,18 @@
   </div>
 </template>
 
-<script>
+<script >
 
+    export default {
+    name: 'CorpoItem',
+    data() {
+        return {
+        posG: [
+            { value: 'Arquitetura de Soluções (em andamento)' },
+            { value: 'Inteligência Artificial' },
+        ]}}
+    }
 
-export default {
-  name: 'CorpoItem'
-//   ,
-//   data(){
-//     return {
-//     posG
-//     }
-//   }
-}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -55,4 +51,4 @@ export default {
     p,li{
         text-align: justify;
     }
-    </style>
+</style>
