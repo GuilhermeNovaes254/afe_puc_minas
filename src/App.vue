@@ -1,18 +1,30 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Cabecalho/>
+  <Corpo :key="posG"/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+  import Corpo from './components/corpo.vue'
+  import Cabecalho from './components/cabecalho.vue'
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  const posG = ['Arquitetura de Soluções (em andamento)','Inteligência Artificial']
+
+  export default {
+    name: 'App',
+    components: {
+      Corpo,
+      Cabecalho
+    },
+    data () {
+      return {
+        posG
+      }
+    }
   }
-}
+
 </script>
+
+
 
 <style>
 #app {
@@ -21,6 +33,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin: 0px; 
 }
 </style>
